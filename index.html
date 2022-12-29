@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,3 +30,48 @@
     </script>
 </body>
 </html>
+=======
+<!-- imporeter react -->
+<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<!-- imporet reactDom -->
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<!-- Importer babel -->
+<!-- Babel est un compilateur JavaScript open-source qui permet de 
+    transformer du code JavaScript moderne en code compatible avec 
+    les navigateurs plus anciens. Cela vous permet d'utiliser les 
+    dernières fonctionnalités de JavaScript dans votre code, même 
+    si ces fonctionnalités ne sont pas encore prises en charge par
+     tous les navigateurs. -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<body>
+    <div id="root"></div>
+</body>
+<script type="text/babel">
+
+
+
+    //create element using react and reactDOM
+
+    // const rootElement = document.getElementById('root');
+    // const element = React.createElement('div',{
+    //     children: React.createElement('span',null,'hello','world')
+    // });
+    // console.log(element);
+    // ReactDOM.render(element,rootElement);
+    
+    // ==> create element using JSX
+    const rootElement = document.getElementById("root");
+    const element = <div className="rootClass">Hello world</div>;
+    ReactDOM.render(element,rootElement)
+    
+    //==> create element using vanilla javascript
+
+    // const rootElement = document.getElementById("root");
+    // console.log(rootElement);
+    // const element = document.createElement('div');
+    // element.textContent = 'hello world';
+    // element.className = 'rootClass';
+    // rootElement.appendChild(element);
+
+</script>
+>>>>>>> 908948e (react training 0)
